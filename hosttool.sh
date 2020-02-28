@@ -9,8 +9,8 @@ update()
     cd ${scriptPath}/AD-hosts; git pull;
 
     echo "" > ${scriptPath}/merge/hosts
+    cat ${scriptPath}/hosts/hosts-files/hosts >> ${scriptPath}/merge/hosts
     cat ${scriptPath}/AD-hosts/system/etc/hosts >> ${scriptPath}/merge/hosts
-    cat ${scriptPath}/hosts/hosts-files/hosts > ${scriptPath}/merge/hosts
     cat ${scriptPath}/bhosts/hosts >> ${scriptPath}/merge/hosts
     
     cd /etc
