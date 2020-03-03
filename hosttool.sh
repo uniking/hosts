@@ -31,9 +31,9 @@ install()
 run()
 {
     if [ $1 == "install" ]
-        install
+        then install
     elif [ $1 == "update" ]
-        update
+        then update
     fi
 }
 
